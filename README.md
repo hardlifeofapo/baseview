@@ -16,6 +16,14 @@ CouchBase provides view data as JSON, which can be accessed and streamed with th
   });
 ```
 
+## example with socket.io
+````js
+  io.sockets.on('connection', function (socket) {
+    baseview.view('feed', 'images', function(error, data) {
+      socket.emit('image_feed', data.rows);
+    });
+  });
+````
 
 
 # contribute

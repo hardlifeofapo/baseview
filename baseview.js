@@ -20,7 +20,7 @@
   */
 var request = require('request')
   , qs = require('querystring')
-  , error = require('./error')
+  , error = require('errs')
   , logging = require('./logging')
   , u = require('url');
 
