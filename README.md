@@ -31,6 +31,11 @@ everyone is welcome to contribute. patches, tests, bugfixes, new features
 7. push to your branch `git push origin my_branch`
 8. create an pull request
 
+# meta
+
+proudly presented by [presive][4], Barcelona.
+
 [1]: https://github.com/dscape/nano
 [2]: https://github.com/elbart/node-memcache
 [3]: http://github.com/Presive/baseview/issues
+[4]: http://www.presive.com
