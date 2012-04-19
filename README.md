@@ -1,8 +1,8 @@
 # baseview
 
-`baseview` is a minimalistic CouchBase client for node.js based on the minimalistic CouchDB driver `nano`[1]
+`baseview` is a minimalistic CouchBase client for node.js based on the minimalistic CouchDB driver [nano][1]
 
-CouchBase provides view data as JSON, which can be accessed and streamed with this client. To store and retrieve single documents/key-value pairs, the `memcached`-library[2] is required.
+CouchBase provides view data as JSON, which can be accessed and streamed with this client. To store and retrieve single documents/key-value pairs, the [memcached][2]-library is required.
 
 # usage
 
