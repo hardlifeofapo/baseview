@@ -1,0 +1,15 @@
+{ "name"            : "baseview"
+, "description"     : "minimalistic couchbase view client for node.js"
+, "homepage"        : "http://www.presive.com"
+, "repository"      : "git://github.com/Presive/baseview"
+, "version"         : "0.0.1"
+, "author"          : "Patrick Heneise <patrick@presive.com> (http://presive.com)"
+, "contributors"    : [
+    "Nuno Job <nunojobpinto@gmail.com> (http://nunojob.com)"]
+, "keywords"        : 
+  ["couchdb", "couchbase", "request", "json", "nosql", "micro", "baseview", "database"]
+, "dependencies"    : { "request": "2.9.x" }
+, "devDependencies" : { "nano" : "2.0.1" }
+, "main"            : "./baseview.js"
+, "engines"         : { "node": ">=0.3.6" }
+}
