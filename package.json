@@ -9,7 +9,6 @@
 , "keywords"        : 
   ["couchdb", "couchbase", "request", "json", "nosql", "micro", "baseview", "database"]
 , "dependencies"    : { "request": "2.9.x" }
-, "devDependencies" : { "nano" : "2.0.1" }
 , "main"            : "./baseview.js"
 , "engines"         : { "node": ">=0.3.6" }
 }
