@@ -2,6 +2,8 @@
 
 `baseview` is a minimalistic CouchBase client for node.js based on the minimalistic CouchDB driver `nano`[1]
 
+CouchBase provides view data as JSON, which can be accessed and streamed with this client. To store and retrieve single documents/key-value pairs, the `memcached`-library[2] is required.
+
 # usage
 
 ``` js
@@ -20,7 +22,7 @@
 
 everyone is welcome to contribute. patches, tests, bugfixes, new features
 
-1. create an [issue][2] on github so the community can comment on your idea
+1. create an [issue][3] on github so the community can comment on your idea
 2. fork `baseview` in github
 3. create a new branch `git checkout -b my_branch`
 4. create tests for the changes you made
@@ -30,4 +32,5 @@ everyone is welcome to contribute. patches, tests, bugfixes, new features
 8. create an pull request
 
 [1]: https://github.com/dscape/nano
-[2]: http://github.com/Presive/baseview/issues
+[2]: https://github.com/elbart/node-memcache
+[3]: http://github.com/Presive/baseview/issues
