@@ -57,7 +57,7 @@ module.exports = baseview = function (cfg) {
           try { params[key] = JSON.stringify(params[key]); }
           catch (ex2) { 
             ex2.message = 'bad params: ' + key + ' = ' + params[key];
-            return error.request_err(ex, 'jsonstringify', {}); 
+            return new Error(ex, 'jsonstringify', {}); 
           }
         }
       });
@@ -101,7 +101,7 @@ module.exports = baseview = function (cfg) {
         rh.uri            = req.uri;
         if(e) {
           log({err: 'socket', body: b, headers: rh });
-          callback(error.request(e,"socket",req,status_code),b,rh);
+          callback(new Error(e,"socket",req,status_code),b,rh);
           return stream;
         }
         try { parsed = JSON.parse(b); } catch (err) { parsed = b; }
@@ -113,14 +113,14 @@ module.exports = baseview = function (cfg) {
         else { // proxy the error directly from couchdb
           log({err: 'couch', body: parsed, headers: rh});
           if (!parsed) { parsed = {}; }
-          callback(error.couch(parsed.reason,parsed.error,req,status_code),
+          callback(new Error(parsed.reason,parsed.error,req,status_code),
             parsed, rh);
           return stream;
         }
       });
       return stream;
     } catch(ex6) { 
-      return error.request_err(ex6, 'callbackthrow', {});
+      return new Error(ex6, 'callbackthrow', {});
     }
   }
   
